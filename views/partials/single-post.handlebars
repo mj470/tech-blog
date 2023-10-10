@@ -1,0 +1,26 @@
+<a href="/dashboard" class="btn btn-secondary">Go Back to Dashboard</a>
+
+{{#if loggedIn}}
+<form class="comment-form" action="/comments" method="POST">
+    <div class="form-control">
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <input type="hidden" name="post_id" value="{{id}}">
+    <button class="btn" type="submit">Add Comment</button>
+</form>
+{{/if}}
+
+{{#each comments}}
+<div class="comment">
+    <div class="comment-header">
+        <p>{{username}}</p>
+        <p>{{createdAt}}</p>
+    </div>
+    <div class="comment-content">
+        <p>{{comment}}</p>
+    </div>
+</div>
+{{/each}}
+
+<script src="/js/add-comment.js"></script>

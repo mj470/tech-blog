@@ -1,0 +1,19 @@
+<a href"/dashboard" class ="btn btn-secondary">Go Back to Dashboard</a>
+
+<article class="new-post">
+    <h2>Add a New Post</h2>
+    <form action="/posts" method="POST">
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div class="form-control">
+            <label for="content">Content</label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+        <button class="btn" type="submit">Add Post</button>
+    </form>
+</article>
+
+<script src="/js/add-post.js"></script>
+```

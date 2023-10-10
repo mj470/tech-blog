@@ -1,0 +1,29 @@
+<section class="new-post">
+    <button class="btn" id="create-post">Create Post</button>
+</section>
+
+{{#if posts.length}}
+
+<section class="posts-list">
+    {{#each posts}}
+    <article class="post">
+        <h3>{{title}}</h3>
+        <p>{{content}}</p>
+        <p>Author: {{author.username}}</p>
+        <p>Created: {{createdAt}}</p>
+        <p>Updated: {{updatedAt}}</p>
+        <a href="/posts/{{id}}" class="btn">View Post</a>
+    </article>
+    {{/each}}
+</section>
+
+{{else}}
+
+<section class="no-posts">
+    <h3>No posts yet!</h3>
+</section>
+
+{{/if}}
+
+<script src="/js/home.js"></script>
+```

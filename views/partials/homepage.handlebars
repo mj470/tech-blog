@@ -1,0 +1,9 @@
+<ul class="posts-list">
+    {{#each posts}}
+    <li>
+        <h2><a href="/posts/{{id}}">{{title}}</a></h2>
+        <p>{{content}}</p>
+        <p>By {{author.username}}</p>
+    </li>
+    {{/each}}
+</ul>

@@ -1,24 +1,24 @@
-<section class="account-sign-in">
-    <div class="account-sign-in-header">
+<section class="account-sign-up">
+    <div class="account-sign-up-header">
         <h2>Sign Up</h2>
     </div>
-    <div class="account-sign-in-form">
+    <div class="account-sign-up-form">
         <form action="/signup" method="POST">
             <div class="form-control">
                 <label for="username">Username</label>
-                <input type="text" class="entry-field" name="username" id="username">
+                <input type="text" class="entry-field" name="username" id="username" required>
             </div>
             <div class="form-control">
                 <label for="password">Password</label>
-                <input type="password" class="entry-field" name="password" id="password">
+                <input type="password" class="entry-field" name="password" id="password" required>
             </div>
             <button class="btn" type="submit">Sign Up</button>
         </form>
     </div>
-    <div class="account-sign-in-link">
+    <div class="signup-error-message" style="color: red;"></div> <!-- Placeholder for error messages -->
+    <div class="account-sign-up-link">
         <p>Already have an account? <a href="/login">Sign in here</a></p>
     </div>
 </section>
 
 <script src="/js/signup.js"></script>
-```

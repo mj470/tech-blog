@@ -1,0 +1,119 @@
+body, h1, h2, p, ul, li, form, header, nav, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+ul.posts-list {
+    list-style-type: none;
+}
+
+ul.posts-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+ul.posts-list li:last-child {
+    border-bottom: none;
+}
+
+ul.posts-list h2 a {
+    text-decoration: none;
+    color: #444;
+}
+
+.article, .new-post {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input[type="text"],
+.form-control input[type="password"],
+.form-control textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #555;
+}
+
+button.btn.btn-danger {
+    background-color: #d9534f;
+    border-color: #d43f00;
+}
+
+footer {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}

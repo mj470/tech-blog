@@ -2,16 +2,19 @@
 
 <article class="new-page">
     <section class="edit-post">
-        <div class="post-title">
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" value="{{title}}">
-        </div>
-        <div class="post-content">
-            <label for="content">Content</label>
-            <textarea name="content" id="content" cols="30" rows="10">{{content}}</textarea>
-        </div>
-        <button class="btn" type="submit">Update Post</button>
-        <button class="btn" id="delete-post">Delete Post</button>
+        <form action="/api/posts/{{id}}" method="POST" id="edit-post-form">
+            <div class="post-title">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" value="{{title}}">
+            </div>
+            <div class="post-content">
+                <label for="content">Content</label>
+                <textarea name="content" id="content" cols="30" rows="10">{{content}}</textarea>
+            </div>
+            <button class="btn" type="submit">Update Post</button>
+            <input type="hidden" name="post_id" value="{{id}}">
+        </form>
+        <button class="btn btn-danger" id="delete-post">Delete Post</button>
     </section>
 </article>
 
@@ -19,4 +22,3 @@
 <script src="/js/edit-post.js"></script>
 <script src="/js/delete-post.js"></script>
 {{/if}}
-```
